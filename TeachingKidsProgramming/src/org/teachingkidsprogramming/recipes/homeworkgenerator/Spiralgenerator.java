@@ -2,6 +2,7 @@ package org.teachingkidsprogramming.recipes.homeworkgenerator;
 
 import java.io.File;
 
+import com.spun.util.NumberUtils;
 import com.spun.util.io.FileUtils;
 
 public class Spiralgenerator
@@ -13,8 +14,14 @@ public class Spiralgenerator
     String recipeSpiral = FileUtils.readFile(input);
     java.io.File file = new File(output);
     //populate with random values
-    Int forloop;
-    recipeSpiral = String.format(recipeSpiral, forloop)
+    int forloop = NumberUtils.getRandomInt(30, 100);
+    int zoomFactor = NumberUtils.getRandomInt(3, 6);
+    int degree = NumberUtils.getRandomInt(3, 9);
+    //create a list a colors with red, blue and green
+    String colorlist[] = {"red", "blue", "green"};
+    //select a random color for the list
+    String colorChange = colorlist[NumberUtils.getRandomInt(0, 2)];
+    recipeSpiral = String.format(recipeSpiral, colorChange, forloop, zoomFactor, degree);
     FileUtils.writeFile(file, recipeSpiral);
   }
 }
