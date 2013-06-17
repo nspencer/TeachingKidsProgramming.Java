@@ -7,7 +7,7 @@ public class TriangleShell
   {
     //    Show the tortoise --#1
     //    Make the tortoise go as fast as possible --#7
-    //    Do the following %s times --#8
+    //    Do the following 35 times --#8
     //          Change the color of the line the tortoise draws to a random color --#10
     //          Increase the current length of the side by 4 pixels --#9
     //          drawTriangle (recipe below) --#6
