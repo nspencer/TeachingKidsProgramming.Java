@@ -18,7 +18,7 @@ public class Spiralgenerator
     int zoomFactor = NumberUtils.getRandomInt(3, 6);
     int degree = NumberUtils.getRandomInt(3, 9);
     //create a list a colors with red, blue and green
-    String colorlist[] = {"red", "blue", "green"};
+    String colorlist[] = {"red", "blue", "green", "yellow", "brown", "black"};
     //select a random color for the list
     String colorChange = colorlist[NumberUtils.getRandomInt(0, colorlist.length - 1)];
     recipeSpiral = String.format(recipeSpiral, colorChange, forloop, zoomFactor, degree);
