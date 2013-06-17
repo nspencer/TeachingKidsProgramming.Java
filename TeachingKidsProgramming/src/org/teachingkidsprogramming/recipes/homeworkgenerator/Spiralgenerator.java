@@ -20,7 +20,7 @@ public class Spiralgenerator
     //create a list a colors with red, blue and green
     String colorlist[] = {"red", "blue", "green"};
     //select a random color for the list
-    String colorChange = colorlist[NumberUtils.getRandomInt(0, 2)];
+    String colorChange = colorlist[NumberUtils.getRandomInt(0, colorlist.length - 1)];
     recipeSpiral = String.format(recipeSpiral, colorChange, forloop, zoomFactor, degree);
     FileUtils.writeFile(file, recipeSpiral);
   }
