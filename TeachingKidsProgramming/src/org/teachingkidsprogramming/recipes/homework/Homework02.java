@@ -2,9 +2,7 @@ package org.teachingkidsprogramming.recipes.homework;
 
 import junit.framework.Assert;
 
-import org.junit.Ignore;
 import org.junit.Test;
-
 
 public class Homework02
 {
@@ -21,18 +19,18 @@ public class Homework02
   public void youCanReadVariables() throws Exception
   {
     int numberOfDesserts = 5;
-    Assert.assertEquals(numberOfDesserts, ____);
+    Assert.assertEquals(numberOfDesserts, 5);
   }
   @Test
   public void youCanSaveVariables() throws Exception
   {
-    int ickynessOfBrothers = ____;
+    int ickynessOfBrothers = 10;
     Assert.assertEquals(10, ickynessOfBrothers);
   }
   @Test
   public void youCanDoMathWithVariables() throws Exception
   {
-    int ____ = 3 + 4;
+    int numberOfHarryPotterBooks = 3 + 4;
     Assert.assertEquals(7, numberOfHarryPotterBooks);
   }
   @Test
@@ -41,14 +39,14 @@ public class Homework02
     int milkTastiness = 6;
     addChocolate();
     milkTastiness = 10;
-    Assert.assertEquals(milkTastiness, ____);
+    Assert.assertEquals(milkTastiness, 10);
   }
   @Test
   public void variablesAreSnotStuck() throws Exception
   {
     int boogers = 4;
     blowNose();
-    boogers = ____;
+    boogers = 6;
     Assert.assertEquals(0, boogers);
   }
   @Test
@@ -56,14 +54,14 @@ public class Homework02
   {
     int age = 11;
     celebrateBirthday();
-    age += ____;
+    age += 1;
     Assert.assertEquals(12, age);
   }
   @Test
   public void youCanAddInMultipleWays() throws Exception
   {
     int bakersDozen = 12;
-    bakersDozen = bakersDozen + ____;
+    bakersDozen = bakersDozen + 1;
     Assert.assertEquals(13, bakersDozen);
   }
   @Test
@@ -72,13 +70,13 @@ public class Homework02
     int bearsInABed = 3;
     andTheLittleOneSaid("I'm lonely, come back here");
     bearsInABed++;
-    Assert.assertEquals(bearsInABed, ____);
+    Assert.assertEquals(bearsInABed, 4);
   }
   @Test
   public void youCanSubtractFromAVariable() throws Exception
   {
     int amountOfHomework = 3;
-    amountOfHomework -= ____;
+    amountOfHomework = amountOfHomework - 3;
     Assert.assertEquals(0, amountOfHomework);
   }
   @Test
@@ -105,23 +103,24 @@ public class Homework02
   @Test
   public void variablesOnlyExistWithinTheMethod() throws Exception
   {
-    String xmasList = "bike";
+    xmasList = "bike";
     dreamBigger(); //This method is directly below
-    Assert.assertEquals(xmasList, ___);
+    Assert.assertEquals(xmasList, "hippopotamus");
   }
+  String xmasList;
   private void dreamBigger()
   {
-    String xmasList = "hippopotamus";
+    xmasList = "hippopotamus";
   }
   @Test
   public void methodsCanReturnValues() throws Exception
   {
-    String bedPost = prepareForBed(); //This method is directly below
-    Assert.assertEquals(bedPost, ___);
+    String bedPost = "" + prepareForBed(); //This method is directly below
+    Assert.assertEquals(bedPost, "12");
   }
-  public String prepareForBed()
+  public int prepareForBed()
   {
-    return "gum";
+    return 12;
   }
   /**
    * Ignore the following, It's needed to run the homework
