@@ -1,5 +1,10 @@
 package org.teachingkidsprogramming.recipes;
 
+import java.awt.Color;
+
+import org.teachingextensions.logo.ColorWheel;
+import org.teachingextensions.logo.Colors;
+
 public class KnottedRing
 {
   public static void main(String[] args)
@@ -8,6 +13,7 @@ public class KnottedRing
     //      createColorPalette (recipe below) --#6
     //      ------------- Recipe for createColorPalette --#6
     //      Add hot pink to the color wheel --#6
+    ColorWheel.addColor(Colors.Pinks.HotPink);
     //      Add red to the color wheel --#12
     //      Add fuchsia to the color wheel --#13
     //      Add orange red to the color wheel --#14
